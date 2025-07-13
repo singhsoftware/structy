@@ -4,10 +4,7 @@
  * Anagrams are strings that contain the same characters, but in any order.
  */
 
-function areMapsEqual(
-  map1: Map<string, number>,
-  map2: Map<string, number>
-): boolean {
+function areMapsEqual(map1: Map<string, number>, map2: Map<string, number>): boolean {
   if (map1.size !== map2.size) return false;
   for (const [key, value] of map1) {
     if (map2.get(key) !== value) return false;
